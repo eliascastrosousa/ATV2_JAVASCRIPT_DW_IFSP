@@ -88,17 +88,14 @@ function FunMudaImgLingProg() {
     }
 }
 
-// Preencher Lista
+// Preencher Lista 
 
-const obj_li_array = document.querySelector('.lista_principal li')
-const obj_lista_vazia = document.querySelector('#lista_vazia')
-const obj_paragrafo = document.querySelector('#paragrafo')
+/* em comentario pois está com erro
+
+const obj_li_array = document.querySelectorAll('#lista_principal li')
+const obj_lista_vazia = document.querySelector('li')
+const obj_paragrafo = document.querySelector('p')
 const obj_prog_lista_vazia = document.querySelector(#prog_lista_vazia)
-
-/*const obj_td_array = document.querySelectorAll('#tab_principal td')
-const obj_tab_vazia = document.querySelector('#tab_vazia')
-const obj_caption_vazia = document.querySelector('#tab_vazia caption')
-const obj_prog_tab_vazia = document.querySelector('#prog_tab_vazia') */
 
 let contador_lista = 0
 
@@ -120,28 +117,4 @@ function FunPreencheLista(par_TextLista) {
         window.alert('Lista Cheia!')
     }
 }
-
-/*
-
-let contador_linhas = 0
-
-for (obj_td of obj_td_array) {
-    obj_td.addEventListener('click', function () { FunPreencheTabela(this.innerText) })
-}
-
-function FunPreencheTabela(par_text) {
-    if (contador_linhas < 5) {
-        const obj_tr_novo = document.createElement('tr')
-        const obj_td_novo = document.createElement('td')
-        obj_td_novo.innerText = par_text
-        obj_tr_novo.appendChild(obj_td_novo)
-        obj_tab_vazia.appendChild(obj_tr_novo)
-        contador_linhas++
-        obj_caption_vazia.innerHTML = `Tabela com ${contador_linhas} Linha(s)`
-        obj_prog_tab_vazia.value = contador_linhas
-    } else {
-        alert('Tabela Cheia!')
-    }
-}
-
 */
