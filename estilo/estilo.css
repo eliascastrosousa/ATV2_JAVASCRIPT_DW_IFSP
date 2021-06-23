@@ -85,7 +85,7 @@ td {
 caption {
     color:  var(--cor-fonte-principal);
 }
-#tab_principal, .lista_principal {
+#tab_principal td , .lista_principal {
     cursor: pointer;
 }
 ul {
@@ -93,6 +93,7 @@ ul {
     font-size: 0.8rem ;
     padding: 0;
 }
+
 @media (min-width: 768px) {
     img {
         width: 50%;
