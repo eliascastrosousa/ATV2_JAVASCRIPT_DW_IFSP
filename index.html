@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Atividade JavaScript</title>
     <link rel="stylesheet" href="estilo/estilo.css">
-    <link rel="icon" href="imagens/Javascript.png" />
+    <link rel="icon" href="imagens/JavaScript.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
@@ -24,15 +24,59 @@
                 </select>
             </div>
             <div>
-                <img src="social-media.png" alt="" class="img_rede_social">
+                <img src="imagens/social-media.png" alt="" class="img_rede_social">
+                <p id="p_rede_social">Redes Sociais</p>
             </div>
-        </div>
+            <div>
+                Clique em uma figura:
+                <br>
+                <img src="imagens/Facebook.png" alt="Logo Facebook" class="figuras">
+                <img src="imagens/Instagram.png" alt="Logo Instagram" class="figuras">
+                <img src="imagens/Linkedin.png" alt="Logo Linkedin" class="figuras">
+                <img src="imagens/Twitter.png" alt="Logo Twitter" class="figuras">
+            </div>
+            <div id="div_adiciona_figura"></div>
+            <div>
+                <table border id="tab_principal">
+                    <caption>Tabela Principal</caption>
+                    <tr>Facebook</tr>
+                    <tr>Instagram</tr>
+                    <tr>Linkedin</tr>
+                    <tr>Twitter</tr>
+                </table>
+            </div>
+            <div>
+                <table id="tab_vazia"></table> 
+            </div>
+            <progress id="prog_tab_vazia" max="5" value="0"></progress>
+        </div> <!-- Fim div container superior -->
+        <div class="container inferior" >
+            <div>
+                <input type="radio" name="" id="" value="CSS"> CSS 
+                <input type="radio" name="" id="" value="HTML"> HTML
+                <input type="radio" name="" id="" value="JavaScript"> JavaScript
+            </div>
+            <div>
+                <img src="imagens/code.png" alt="Linguagens de programação Web">
+                <pre>Programação Web</pre>
+            </div>
+            <div>
+                <p>Lista Principal</p>
+                <ul>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <p>Lista Vazia</p>
+                <ul></ul>
+                <progress id="" max="6" value="0"></progress> 
+            </div>
+        </div> <!-- Fim div container inferior -->
+    </main> 
 
-
-    </main>
-
-
-
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
