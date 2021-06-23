@@ -90,13 +90,38 @@ function FunMudaImgLingProg() {
 
 // Preencher Lista
 
+const obj_li_array = document.querySelector('.lista_principal li')
+const obj_lista_vazia = document.querySelector('#lista_vazia')
+const obj_paragrafo = document.querySelector('#paragrafo')
+const obj_prog_lista_vazia = document.querySelector(#prog_lista_vazia)
 
-
-/*
-const obj_td_array = document.querySelectorAll('#tab_principal td')
+/*const obj_td_array = document.querySelectorAll('#tab_principal td')
 const obj_tab_vazia = document.querySelector('#tab_vazia')
 const obj_caption_vazia = document.querySelector('#tab_vazia caption')
-const obj_prog_tab_vazia = document.querySelector('#prog_tab_vazia')
+const obj_prog_tab_vazia = document.querySelector('#prog_tab_vazia') */
+
+let contador_lista = 0
+
+for (obj_li of obj_li_array){
+    obj_li.addEventListener('click', function () { FunPreencheLista(this.innerText) })
+}
+
+function FunPreencheLista(par_TextLista) {
+    if(contador_lista <6) {
+        const obj_ul_novo = document.createElement('ul')
+        const obj_li_novo = document.createElement('li')
+        obj_li_novo.innerText = par_TextLista
+        obj_ul_novo.appendChild(obj_li_novo)
+        obj_lista_vazia.appendChild(obj_ul_novo) 
+        contador_lista++
+        obj_paragrafo.innerHTML = `Lista com ${contador_lista} Linha(s).`
+        obj_prog_lista_vazia.value = contador_lista 
+    }else {
+        window.alert('Lista Cheia!')
+    }
+}
+
+/*
 
 let contador_linhas = 0
 
@@ -118,5 +143,5 @@ function FunPreencheTabela(par_text) {
         alert('Tabela Cheia!')
     }
 }
-*/
 
+*/
