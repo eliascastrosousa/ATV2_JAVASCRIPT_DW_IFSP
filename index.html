@@ -17,14 +17,14 @@
             <div>
                 <select name="" id="sel_rede_social">
                     <option value="" selected disabled >Escolha uma Rede Social...</option>
-                    <option value="facebook">Facebook</option>
-                    <option value="instagram">instagram</option>
-                    <option value="linkedin">Linkedin</option>
-                    <option value="twitter">Twitter</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Twitter">Twitter</option>
                 </select>
             </div>
             <div>
-                <img src="imagens/social-media.png" alt="" class="img_rede_social">
+                <img src="imagens/social-media.png" alt="Redes Sociais" id="img_rede_social">
                 <p id="p_rede_social">Redes Sociais</p>
             </div>
             <div>
@@ -37,19 +37,25 @@
             </div>
             <div id="div_adiciona_figura"></div>
             <div>
-                <table border id="tab_principal">
+                <table id="tab_principal">
                     <caption>Tabela Principal</caption>
-                    <tr>Facebook</tr>
-                    <tr>Instagram</tr>
-                    <tr>Linkedin</tr>
-                    <tr>Twitter</tr>
+                    <tr><td>Facebook  </td></tr>
+                    <tr><td>Instagram </td></tr>
+                    <tr><td>Linkedin  </td></tr>
+                    <tr><td>Twitter   </td></tr>
                 </table>
             </div>
             <div>
-                <table id="tab_vazia"></table> 
+                <table id="tab_vazia">
+                    <caption>Tabela Vazia</caption>
+                </table>
+                <progress id="prog_tab_vazia" max="5" value="0"></progress>
             </div>
-            <progress id="prog_tab_vazia" max="5" value="0"></progress>
+            
         </div> <!-- Fim div container superior -->
+
+                       <!-- Iniciando o container inferior-->
+
         <div class="container inferior" >
             <div>
                 <input type="radio" name="" id="" value="CSS"> CSS 
@@ -61,15 +67,15 @@
                 <pre>Programação Web</pre>
             </div>
             <div>
-                <p>Lista Principal</p>
-                <ul>
+                <p id="id_lista_principal">Lista Principal</p>
+                <ul class="lista_principal">
                     <li>CSS</li>
                     <li>HTML</li>
                     <li>JavaScript</li>
                 </ul>
             </div>
             <div>
-                <p>Lista Vazia</p>
+                <p id="id_lista_vazia">Lista Vazia</p>
                 <ul></ul>
                 <progress id="" max="6" value="0"></progress> 
             </div>
