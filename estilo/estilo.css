@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
-:root
+:root {
 --cor-fonte-principal: darkslateblue;
 --cor-fonte-secundaria: dimgray;
 --cor-fundo-principal: gainsboro;
 --cor-fundo-secundaria: aliceblue;
+}
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family:'Kanit', sans-serif ;
+    font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
     color: var(--cor-fonte-principal) ;
-    background-color: var(--cor-fundo-principal);
+    background-color:  var(--cor-fundo-principal);
 }
 img {
     width: 40%;
@@ -33,8 +36,8 @@ header {
 main {
     top: 4rem;
     height: 100%;
-    width: 100%;
     position: absolute;
+    width: 100%;
 }
 .container {
     max-height: 200%;
@@ -50,10 +53,11 @@ main {
 .superior, .inferior {
     grid-template-columns: 1fr;
 }
+
 input, select, option {
-    color: inherit;
+    color:inherit;
     font-family: inherit;
-    font-size: inherit;
+    font-weight: inherit;
     text-align: inherit;
 }
 .figuras {
@@ -84,7 +88,7 @@ caption {
 #tab_principal, .lista_principal {
     cursor: pointer;
 }
-#id_lista_principal, #id_lista_vazia {
+ul {
     list-style-position: inside;
     font-size: 0.8rem ;
     padding: 0;
@@ -108,7 +112,7 @@ caption {
         grid-template-columns: repeat(6, 1fr);
     }
     .inferior {
-        grid-template-columns: repeat(6, 1fr)
-;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
+
